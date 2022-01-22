@@ -1,5 +1,10 @@
 name: build and push
 
+on:
+  push:
+    tags:
+      - '*'
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
